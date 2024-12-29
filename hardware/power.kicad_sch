@@ -1862,6 +1862,17 @@
 		)
 		(uuid "f9b1162a-4b7a-4a91-9769-492ebf3991da")
 	)
+	(label "BP"
+		(at 116.84 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a78e87f7-0376-43f1-9b84-4322109a0eac")
+	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 48.26 45.72 270)

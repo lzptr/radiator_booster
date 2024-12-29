@@ -11,7 +11,7 @@
 		(company "LP")
 	)
 	(lib_symbols
-		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -26,7 +26,7 @@
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
 				(at 0 19.685 0)
 				(effects
 					(font
@@ -52,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -79,10 +79,32 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
 					(stroke
 						(width 0)
 						(type default)
@@ -169,7 +191,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -370,7 +392,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -472,6 +494,24 @@
 						)
 					)
 					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -598,6 +638,24 @@
 						)
 					)
 					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1123,363 +1181,6 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 1.27)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:Filter_EMI_LL_1423"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "FL"
-				(at 0 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Filter_EMI_LL_1423"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.016 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "EMI 2-inductor filter, pin-connections 1-4 and 2-3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "EMI filter common-mode choke"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Bourns*SRF0905*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Filter_EMI_LL_1423_0_1"
-				(circle
-					(center -3.048 -1.27)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -3.048 1.524)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -2.54 2.032)
-					(mid -2.032 1.5262)
-					(end -1.524 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 -2.032)
-					(mid -2.032 -1.5262)
-					(end -2.54 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 2.032)
-					(mid -1.016 1.5262)
-					(end -0.508 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.508 -2.032)
-					(mid -1.016 -1.5262)
-					(end -1.524 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.508 2.032)
-					(mid 0 1.5262)
-					(end 0.508 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -2.032) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.508) (xy 2.54 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.032) (xy -2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.032) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -0.508) (xy -2.54 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.508 -2.032)
-					(mid 0 -1.5262)
-					(end -0.508 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.508 2.032)
-					(mid 1.016 1.5262)
-					(end 1.524 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -2.032)
-					(mid 1.016 -1.5262)
-					(end 0.508 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 2.032)
-					(mid 2.032 1.5262)
-					(end 2.54 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 -2.032)
-					(mid 2.032 -1.5262)
-					(end 1.524 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Filter_EMI_LL_1423_1_1"
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
 					(name "4"
 						(effects
 							(font
@@ -3956,8 +3657,8 @@
 		(uuid "11f7dd89-cdc0-41af-9562-2d99438077ff")
 	)
 	(no_connect
-		(at 123.19 88.9)
-		(uuid "2c0ab6a6-d564-4c3e-8c13-be216a00ded6")
+		(at 123.19 71.12)
+		(uuid "2694e069-b7fa-4061-9bf3-1123f3a5a88c")
 	)
 	(no_connect
 		(at 123.19 96.52)
@@ -3966,10 +3667,6 @@
 	(no_connect
 		(at 123.19 99.06)
 		(uuid "341cc51a-8831-452c-8136-fdf33c7e78fa")
-	)
-	(no_connect
-		(at 179.07 93.98)
-		(uuid "37533004-d869-4b73-b35f-86dcc38b0785")
 	)
 	(no_connect
 		(at 123.19 106.68)
@@ -3984,6 +3681,10 @@
 		(uuid "5a0e4ba2-1d89-4dd3-b62c-821e88e29e53")
 	)
 	(no_connect
+		(at 123.19 88.9)
+		(uuid "779ce834-aad2-4e48-b5a7-90c974146fdd")
+	)
+	(no_connect
 		(at 179.07 60.96)
 		(uuid "89fa1848-f0a6-432e-af7b-1e77048b915b")
 	)
@@ -3996,26 +3697,24 @@
 		(uuid "b5bfd72e-df45-4b52-a887-9ac0ed38c1c7")
 	)
 	(no_connect
-		(at 123.19 86.36)
-		(uuid "c2a45e22-2d92-4645-b502-b8ae193b8379")
+		(at 123.19 68.58)
+		(uuid "b7a44901-15a4-4063-b912-52c322e26903")
 	)
 	(no_connect
-		(at 179.07 86.36)
-		(uuid "c65d08c7-7ebd-48fe-a010-6716134c34ba")
+		(at 123.19 86.36)
+		(uuid "dfa891f4-594c-4166-af61-14a860104f56")
+	)
+	(no_connect
+		(at 58.42 175.26)
+		(uuid "e30873f1-5148-4b72-9e7d-397028b8cb01")
+	)
+	(no_connect
+		(at 58.42 177.8)
+		(uuid "eaef44ea-8352-4ec8-82b8-e7ad32ed47ea")
 	)
 	(no_connect
 		(at 123.19 104.14)
 		(uuid "f6e84804-5db0-4ac1-8e81-8cb37291c7b9")
-	)
-	(wire
-		(pts
-			(xy 105.41 177.8) (xy 119.38 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03513248-65e2-41e4-bdc1-ae702daeeda9")
 	)
 	(wire
 		(pts
@@ -4196,16 +3895,6 @@
 			(type default)
 		)
 		(uuid "2421fe9a-b7b5-41b8-b38a-d560065457b3")
-	)
-	(wire
-		(pts
-			(xy 114.3 83.82) (xy 123.19 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2456fb43-1e25-4162-990a-5de12c796caf")
 	)
 	(wire
 		(pts
@@ -4669,6 +4358,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 86.36) (xy 179.07 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a50e890-d24b-41fd-a30c-510d3f3af86b")
+	)
+	(wire
+		(pts
 			(xy 58.42 86.36) (xy 62.23 86.36)
 		)
 		(stroke
@@ -4736,6 +4435,16 @@
 			(type default)
 		)
 		(uuid "71b9997c-dd85-4fe7-b3ef-c13e5b3042bd")
+	)
+	(wire
+		(pts
+			(xy 114.3 83.82) (xy 123.19 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72441104-7caa-48d4-906f-1f185018e44d")
 	)
 	(wire
 		(pts
@@ -4999,16 +4708,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 182.88) (xy 119.38 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a84df0d-3e23-46fe-b58f-418572d8fde9")
-	)
-	(wire
-		(pts
 			(xy 58.42 54.61) (xy 58.42 58.42)
 		)
 		(stroke
@@ -5109,23 +4808,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 182.88) (xy 129.54 182.88)
+			(xy 179.07 93.98) (xy 185.42 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b75e30d5-df90-4933-b3aa-c4a27c57955e")
-	)
-	(wire
-		(pts
-			(xy 116.84 68.58) (xy 123.19 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7ddb10a-76db-4dcf-8610-fc4383154f9c")
+		(uuid "b95a5774-a295-4832-938b-aa607073d011")
 	)
 	(wire
 		(pts
@@ -5319,16 +5008,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 177.8) (xy 129.54 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2f21b0f-c178-423a-a448-12044fe089a5")
-	)
-	(wire
-		(pts
 			(xy 58.42 101.6) (xy 58.42 107.95)
 		)
 		(stroke
@@ -5356,16 +5035,6 @@
 			(type default)
 		)
 		(uuid "e7f80d26-89fb-4729-82ea-1c01011ec109")
-	)
-	(wire
-		(pts
-			(xy 116.84 71.12) (xy 123.19 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea1d5b0b-305d-405e-a783-62d3c974cf7a")
 	)
 	(wire
 		(pts
@@ -5514,7 +5183,7 @@
 		)
 		(uuid "409db785-98a8-4a41-80bf-9341b1fa7be9")
 	)
-	(text "Pull MTDI low or leave unconnected to use internal regulator for the in package Flash\nLeave VDD_SPI unconnected\nhttps://docs.espressif.com/projects/esptool/en/latest/esp32c3/espefuse/set-flash-voltage-cmd.html"
+	(text "Flash efuses to fixed 3.3V to use MTDI as normal pin\nhttps://docs.espressif.com/projects/esptool/en/latest/esp32c3/espefuse/set-flash-voltage-cmd.html"
 		(exclude_from_sim no)
 		(at 16.256 133.096 0)
 		(effects
@@ -5536,7 +5205,7 @@
 		)
 		(uuid "9fe62c0e-effa-49dd-b5d5-fed4334ffa41")
 	)
-	(text "Signal Path:\nConnector <-> ESD Protection <-> Common-Mode Choke <-> MCU\n"
+	(text "Signal Path:\nConnector <-> ESD Protection <-> MCU\n"
 		(exclude_from_sim no)
 		(at 54.61 193.04 0)
 		(effects
@@ -5546,17 +5215,6 @@
 			(justify left bottom)
 		)
 		(uuid "c962b047-14df-4c13-9047-770951161c9d")
-	)
-	(text "Common-Mode Choke Impedance: 90R"
-		(exclude_from_sim no)
-		(at 105.41 187.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d12b2500-5aef-4752-a8d7-eaedfcc0ca0d")
 	)
 	(label "XTAL_N"
 		(at 114.3 76.2 0)
@@ -5569,7 +5227,7 @@
 		)
 		(uuid "12b2f8b4-d2d8-47ba-806b-ae8946892c1e")
 	)
-	(label "USB_CMC_D+"
+	(label "USB_D+"
 		(at 143.51 158.75 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5624,8 +5282,8 @@
 		)
 		(uuid "364dc78e-5115-4718-9cae-7d48aa753a3a")
 	)
-	(label "USB_CMC_D-"
-		(at 105.41 177.8 0)
+	(label "LNA_IN"
+		(at 97.79 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5633,29 +5291,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "61887b77-ab5a-4048-85ca-0c57a7913e42")
-	)
-	(label "USB_D+"
-		(at 143.51 182.88 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6b27d27b-12ec-4eaa-b018-e8a6cd49710f")
-	)
-	(label "USB_CMC_D+"
-		(at 105.41 182.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6e24c930-f739-472b-840c-823902f68431")
+		(uuid "4952e6ec-2840-48fa-a6a8-9455c7dde2d6")
 	)
 	(label "XTAL_P"
 		(at 114.3 78.74 0)
@@ -5690,17 +5326,6 @@
 		)
 		(uuid "7da7f11c-03b0-424c-8228-915eca776827")
 	)
-	(label "USB_D-"
-		(at 143.51 177.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "80e43475-c234-4487-96eb-e08150db4e6a")
-	)
 	(label "ACT"
 		(at 267.97 123.19 0)
 		(fields_autoplaced yes)
@@ -5724,17 +5349,17 @@
 		(uuid "af3180d5-613c-4007-b1e5-524e4c06e241")
 	)
 	(label "ACT"
-		(at 114.3 83.82 0)
+		(at 185.42 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "b3274661-6e8d-4b92-9ede-06b546eacf03")
 	)
-	(label "USB_CMC_D-"
+	(label "USB_D-"
 		(at 143.51 156.21 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5744,6 +5369,17 @@
 			(justify right bottom)
 		)
 		(uuid "b4b8cabc-d692-4363-82da-e44dda2aea9e")
+	)
+	(label "GP2"
+		(at 181.61 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b87043c1-46b4-4acf-842d-0251d159bbc7")
 	)
 	(label "USB_D-"
 		(at 189.23 68.58 180)
@@ -5766,6 +5402,17 @@
 			(justify left bottom)
 		)
 		(uuid "c9345093-918c-4b1e-994b-35f2c6a0e796")
+	)
+	(label "GP8"
+		(at 180.34 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cfc61d26-8f19-4a36-bf2c-f07abc7e9b66")
 	)
 	(label "USB_CONN_D-"
 		(at 78.74 160.02 180)
@@ -5811,9 +5458,21 @@
 		)
 		(uuid "f91fecc1-2532-4109-a6ec-1a3ee4224ea9")
 	)
+	(hierarchical_label "I2C_CLK"
+		(shape output)
+		(at 180.34 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a924d80-078b-4971-b09b-b907799b7c8a")
+	)
 	(hierarchical_label "I2C_DATA"
 		(shape bidirectional)
-		(at 116.84 68.58 180)
+		(at 114.3 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5821,7 +5480,7 @@
 			)
 			(justify right)
 		)
-		(uuid "0685d28a-0fc5-4f37-bcf0-c003378a8fdc")
+		(uuid "50d9b1fc-d7be-4686-b2ba-cb09a3bb99d9")
 	)
 	(hierarchical_label "FAN_ALERT"
 		(shape input)
@@ -5834,18 +5493,6 @@
 			(justify right)
 		)
 		(uuid "5c2b8582-15b3-471b-92d9-d0e44c92db97")
-	)
-	(hierarchical_label "I2C_CLK"
-		(shape output)
-		(at 116.84 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7eef0f52-afc4-4af4-8a54-ae076dbac8ce")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -7701,7 +7348,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7dda3a5b-4af4-420c-a3ce-0cb24fb5f2f9")
-		(property "Reference" "#FLG0303"
+		(property "Reference" "#FLG0302"
 			(at 66.675 147.32 0)
 			(effects
 				(font
@@ -7752,7 +7399,7 @@
 		(instances
 			(project "radiator_booster"
 				(path "/af3170cb-38e8-4f1f-8d67-3c2d4410beea/3e91bf98-2805-47ae-aad0-7f27ae6ee6a3"
-					(reference "#FLG0303")
+					(reference "#FLG0302")
 					(unit 1)
 				)
 			)
@@ -7980,7 +7627,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 43.18 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8024,7 +7671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 43.18 162.56 0)
 			(effects
 				(font
@@ -8095,6 +7742,12 @@
 		(pin "S1"
 			(uuid "8f8faeb1-eb0a-4479-a8be-a8ebedfde770")
 		)
+		(pin "A8"
+			(uuid "66e36906-e345-4d33-941f-1f0e3530bff0")
+		)
+		(pin "B8"
+			(uuid "d442ac96-fefc-4e00-84f2-e6df493c2ada")
+		)
 		(instances
 			(project "gas_counter"
 				(path "/af3170cb-38e8-4f1f-8d67-3c2d4410beea/3e91bf98-2805-47ae-aad0-7f27ae6ee6a3"
@@ -8113,7 +7766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9ea00c1c-1d3b-4bd7-a1cc-6c47360175db")
-		(property "Reference" "#FLG0301"
+		(property "Reference" "#FLG0303"
 			(at 150.495 26.67 0)
 			(effects
 				(font
@@ -8164,7 +7817,7 @@
 		(instances
 			(project "gas_counter"
 				(path "/af3170cb-38e8-4f1f-8d67-3c2d4410beea/3e91bf98-2805-47ae-aad0-7f27ae6ee6a3"
-					(reference "#FLG0301")
+					(reference "#FLG0303")
 					(unit 1)
 				)
 			)
@@ -8850,7 +8503,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BOOTSEL"
+		(property "Value" "BOOT"
 			(at 255.778 142.24 90)
 			(effects
 				(font
@@ -8969,98 +8622,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Filter_EMI_LL_1423")
-		(at 124.46 180.34 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b7fefee8-8676-405d-b017-bc0e5d06b8ce")
-		(property "Reference" "L302"
-			(at 124.46 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CMF3216F-900-2P-T"
-			(at 124.46 174.752 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "lzptr:CMC-1206"
-			(at 124.46 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 181.356 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "EMI 2-inductor filter, pin-connections 1-4 and 2-3"
-			(at 124.46 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "C963740"
-			(at 124.46 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "90Ω@100MHz "
-			(at 124.46 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d2d6ee36-6a46-4636-962b-d7f250753984")
-		)
-		(pin "2"
-			(uuid "37d428cc-7466-442f-8eab-0d20d7e0b9b2")
-		)
-		(pin "3"
-			(uuid "cbabcfa2-fcdb-4fe6-a975-d76126954d53")
-		)
-		(pin "4"
-			(uuid "d3cfadcb-31e5-4131-9a13-38bf31a043e4")
-		)
-		(instances
-			(project "gas_counter"
-				(path "/af3170cb-38e8-4f1f-8d67-3c2d4410beea/3e91bf98-2805-47ae-aad0-7f27ae6ee6a3"
-					(reference "L302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 125.73 26.67 90)
 		(unit 1)
@@ -9069,7 +8630,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c111859c-1b4e-44ec-b219-7897da70821b")
-		(property "Reference" "L303"
+		(property "Reference" "L302"
 			(at 125.73 21.59 90)
 			(effects
 				(font
@@ -9138,7 +8699,7 @@
 		(instances
 			(project "gas_counter"
 				(path "/af3170cb-38e8-4f1f-8d67-3c2d4410beea/3e91bf98-2805-47ae-aad0-7f27ae6ee6a3"
-					(reference "L303")
+					(reference "L302")
 					(unit 1)
 				)
 			)
@@ -9713,7 +9274,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d639c56a-416b-4e0d-93ca-7d8e5ef8b4c3")
-		(property "Reference" "#FLG0302"
+		(property "Reference" "#FLG0301"
 			(at 46.99 189.865 0)
 			(effects
 				(font
@@ -9764,7 +9325,7 @@
 		(instances
 			(project "radiator_booster"
 				(path "/af3170cb-38e8-4f1f-8d67-3c2d4410beea/3e91bf98-2805-47ae-aad0-7f27ae6ee6a3"
-					(reference "#FLG0302")
+					(reference "#FLG0301")
 					(unit 1)
 				)
 			)
