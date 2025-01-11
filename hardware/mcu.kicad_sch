@@ -5139,7 +5139,7 @@
 		)
 		(uuid "016206ae-ce4d-40a4-80bd-8bb177f7bdcd")
 	)
-	(text "CL = 9pF"
+	(text "CL = 10pF"
 		(exclude_from_sim no)
 		(at 63.246 75.692 0)
 		(effects
@@ -6025,7 +6025,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESP32-C3"
+		(property "Value" "ESP32-C3FH4"
 			(at 153.3241 119.38 0)
 			(effects
 				(font
@@ -6069,7 +6069,16 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C2858491"
+			(at 151.13 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rotation Offset" "-90"
 			(at 151.13 86.36 0)
 			(effects
 				(font
@@ -6786,7 +6795,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lzptr:ANT_16060A1T_WAL-L"
+		(property "Footprint" "lzptr:ANT5320LL45R2400A"
 			(at 58.42 49.53 0)
 			(effects
 				(font
@@ -6813,7 +6822,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C127620"
+		(property "MPN" "C723371"
 			(at 58.42 49.53 0)
 			(effects
 				(font
@@ -6991,7 +7000,7 @@
 				(justify right)
 			)
 		)
-		(property "MPN" "C72043"
+		(property "MPN" "C12624"
 			(at 267.97 135.89 0)
 			(effects
 				(font
@@ -7695,6 +7704,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Position Offset" "0,1.45"
+			(at 43.18 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "A1"

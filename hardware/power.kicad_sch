@@ -2984,7 +2984,7 @@
 				)
 			)
 		)
-		(property "MPN" "C72043"
+		(property "MPN" "C12624"
 			(at 143.51 52.07 0)
 			(effects
 				(font
@@ -3062,6 +3062,15 @@
 			)
 		)
 		(property "MPN" "C9055"
+			(at 107.95 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rotation Offset" "90"
 			(at 107.95 48.26 0)
 			(effects
 				(font
