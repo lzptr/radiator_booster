@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "4523e8cf-9ccf-47bf-916b-ef8f2dfd397c")
 	(paper "A4")
+	(title_block
+		(title "Radiator Booster")
+		(date "2025-01-19")
+		(rev "0.1")
+		(company "LP")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
@@ -3118,7 +3124,7 @@
 				(justify left)
 			)
 		)
-		(property "MPN" "C60490"
+		(property "MPN" "C25744"
 			(at 41.91 59.69 0)
 			(effects
 				(font
@@ -3423,6 +3429,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 96.52 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "09ec50e0-3170-4164-b297-79308f22218f")
 		)
@@ -3651,7 +3666,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C326602"
+		(property "MPN" "C25879"
 			(at 78.74 52.07 0)
 			(effects
 				(font
@@ -4108,7 +4123,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C326602"
+		(property "MPN" "C25879"
 			(at 132.08 50.8 0)
 			(effects
 				(font
@@ -4300,7 +4315,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C326602"
+		(property "MPN" "C25879"
 			(at 154.94 50.8 0)
 			(effects
 				(font
@@ -4389,7 +4404,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C326602"
+		(property "MPN" "C25879"
 			(at 69.85 52.07 0)
 			(effects
 				(font
@@ -4476,7 +4491,7 @@
 				(justify left)
 			)
 		)
-		(property "MPN" "C60490"
+		(property "MPN" "C25744"
 			(at 49.53 59.69 0)
 			(effects
 				(font
@@ -4800,7 +4815,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C326602"
+		(property "MPN" "C25879"
 			(at 139.7 50.8 0)
 			(effects
 				(font
@@ -4992,7 +5007,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C326602"
+		(property "MPN" "C25879"
 			(at 147.32 50.8 0)
 			(effects
 				(font
@@ -5081,7 +5096,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C326602"
+		(property "MPN" "C25879"
 			(at 124.46 50.8 0)
 			(effects
 				(font

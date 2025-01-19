@@ -6,8 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "Radiator Booster")
-		(rev "1")
-		(comment 1 "Design for JLCPCB Service")
+		(date "2025-01-19")
+		(rev "0.1")
+		(company "LP")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"

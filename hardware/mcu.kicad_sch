@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Radiator Booster")
-		(date "2024-11-17")
+		(date "2025-01-19")
 		(rev "0.1")
 		(company "LP")
 	)
@@ -6795,7 +6795,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lzptr:ANT5320LL45R2400A"
+		(property "Footprint" "lzptr:Rainsun-AN9520-245"
 			(at 58.42 49.53 0)
 			(effects
 				(font
@@ -6822,7 +6822,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C723371"
+		(property "MPN" "C99665"
 			(at 58.42 49.53 0)
 			(effects
 				(font
@@ -6955,7 +6955,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 267.97 135.89 0)
 			(effects
 				(font
@@ -7000,7 +7000,7 @@
 				(justify right)
 			)
 		)
-		(property "MPN" "C12624"
+		(property "MPN" "C2297"
 			(at 267.97 135.89 0)
 			(effects
 				(font

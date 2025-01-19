@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Radiator Booster")
-		(date "2024-11-17")
+		(date "2025-01-19")
 		(rev "0.1")
 		(company "LP")
 	)
@@ -2949,7 +2949,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 143.51 52.07 0)
 			(effects
 				(font
@@ -2984,7 +2984,7 @@
 				)
 			)
 		)
-		(property "MPN" "C12624"
+		(property "MPN" "C2297"
 			(at 143.51 52.07 0)
 			(effects
 				(font
