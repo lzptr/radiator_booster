@@ -39,8 +39,11 @@ i2c:
 
 # EMC2305 Fan Controller
 external_components:
-  - source: github://lzptr/radiator_booster/firmware/
-    ref: feat/esphome
+  - source:
+      type: git
+      url: https://github.com//lzptr/radiator_booster/
+      ref: feat/esphome
+      path: firmware
     components: [ emc2305 ]
 
 emc2305:
