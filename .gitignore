@@ -18,3 +18,17 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
+secrets.yaml
+.storage
+.cache
+.cloud
+.google.token
+.HA_VERSION
+*.log*
+logs/
+log/
+custom_components/
+influxdb/data/data
+influxdb/wal
+.esphome
+*.pyc
