@@ -1,19 +1,21 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "4523e8cf-9ccf-47bf-916b-ef8f2dfd397c")
 	(paper "A4")
 	(title_block
 		(title "Radiator Booster")
-		(date "2025-01-19")
-		(rev "0.1")
+		(date "2025-03-08")
+		(rev "0.2")
 		(company "LP")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -80,19 +82,19 @@
 			)
 			(symbol "Conn_01x04_1_1"
 				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -113,8 +115,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -124,14 +126,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -207,9 +209,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -282,7 +287,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -294,7 +299,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -343,9 +348,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -464,6 +472,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "lzptr:EMC2305"
 			(exclude_from_sim no)
@@ -532,16 +541,34 @@
 					)
 				)
 				(pin input line
-					(at 15.24 -1.27 180)
+					(at -15.24 11.43 0)
 					(length 2.54)
-					(name "TACH3"
+					(name "SMCLK"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 8.89 0)
+					(length 2.54)
+					(name "ADDR_SEL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -567,96 +594,6 @@
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 -5.08 180)
-					(length 2.54)
-					(name "PWM4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 15.24 -7.62 180)
-					(length 2.54)
-					(name "TACH4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 -11.43 180)
-					(length 2.54)
-					(name "PWM5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 15.24 -13.97 180)
-					(length 2.54)
-					(name "TACH5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 11.43 0)
-					(length 2.54)
-					(name "SMCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 0 19.05 270)
 					(length 2.54)
@@ -668,24 +605,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 8.89 0)
-					(length 2.54)
-					(name "ADDR_SEL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -783,6 +702,96 @@
 						)
 					)
 				)
+				(pin input line
+					(at 15.24 -1.27 180)
+					(length 2.54)
+					(name "TACH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "PWM4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "TACH4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -11.43 180)
+					(length 2.54)
+					(name "PWM5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -13.97 180)
+					(length 2.54)
+					(name "TACH5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(symbol "EMC2305_1_0"
 				(pin output line
@@ -836,12 +845,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -913,7 +927,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -925,7 +939,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -956,12 +970,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1033,7 +1052,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1045,7 +1064,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1076,12 +1095,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1172,7 +1196,41 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text " All Noctua fans provide a tachometer output signal of the following characteristics:\n • two cycles per revolution\n • open collector output\n • Maximum current is 5mA for 5V"
+		(exclude_from_sim no)
+		(at 193.04 85.598 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "171b3da7-ecc0-45b3-a8f1-f1b832151a50")
+	)
+	(text "10K -> 0101_100(r/w)"
+		(exclude_from_sim no)
+		(at 55.118 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ec61962-adbd-43e6-8d04-4bbbe349d972")
+	)
+	(text " As specified by Intel (c.f. \"4-Wire Pulse Width Modulation (PWM) Controlled Fans\", Intel \nCorporation September 2005, revision 1.3), the square wave type PWM signal has to be \nsupplied to the PWM input (pin 4) of the fan and must conform to the \nfollowing specifications:\n • Target frequency: 25kHz, acceptable range 21kHz to 28kHz\n • Maximum voltage for logic low: VIL=0,8V\n • Absolute maximum current sourced: Imax=5mA (short circuit current)\n • Absolute maximum voltage level: VMax=5,25V (open circuit voltage)\n • Allowed duty-cycle range 0% to 100%\n\nThe signal is not inverted, 100% PWM duty cycle (= 5V DC) results in maximum fan speed.\n External pull-up is not necessary as the signal is pulled up to 3,3V/5V inside the fan."
+		(exclude_from_sim no)
+		(at 193.294 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "80aa8901-9898-42ea-ab3b-b1fb3b8bbdb8")
 	)
 	(junction
 		(at 154.94 88.9)
@@ -2801,45 +2859,47 @@
 			"+qHG5I4FNYZhDEr+tKEZhmEKCBbUGIYxKCyoMQxjUFhQYxjGoLCgxjCMQWFBjWEYg8KCGsMwBoUF"
 			"NYZhDAoLagzDGBQW1BiGMSgsqDEMY1BYUGMYxqCwoMYwjEFhQY1hGIPCghrDMAaFBTWGYQwKC2oM"
 			"wxgUFtQYhjEoLKgxDGNQWFBjGMagsKDGMIxBYUGNYRiDwoIawzAGhQU1hmEMyv8BJ+fchtNSUk8A"
-			"AAAASUVORK5CYII="
+			"AAAASUVORK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAFkCAAAAAAAAUAmPLUECAAA42fvl/H8AAAIBAAD/////AAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAWgIAAAAAAAAwJo8tQQIAAKjY++X8fwAAAgEAAP////8AAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAABbAgAAAAAAALAGjy1BAgAAqNj75fx/AAACAQAA/////wAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAFwCAAAAAAAAMPyOLUECAACo2Pvl/H8AAAIBAAD/////AAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAXQIAAAAAAABQCY8tQQIAAKjY++X8fwAAAgEAAP////8AAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAABeAgAAAAAAAHBAtC1BAgAA4CX85fx/AAADAQAA/////wAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAANUAAAAAAAAAkA6PLUECAADIIvzl/H8AAAIBAAD/////AAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAA6AAAAAAAAADQ/o4tQQIAAMgi/OX8fwAAAgEAAP////8AAAAAAAAAAAAAAAAAAAAAAQAA"
+			"AC1hbmTpAAAAAAAAAFD0ji1BAgAAyCL85fx/AAACAQAA/////wAAAAAAAAAAAAAAAAAAAABYEJU2"
+			"QQIAAOoAAABBAgAAcCuPLUECAADIIvzl/H8AAAIBAAD/////AAAAAAAAAAAAAAAAAAAAAJAPlTZB"
+			"AgAA6wAAAP1/AACQDo8tQQIAAEjY++X8fwAAAgEVSf////8AAAAAAAAAAAAAAAAAAAAAINIVSf1/"
+			"AABkAgAA/X8AAND+ji1BAgAASNj75fx/AAACAZU2/////wAAAAAAAAAAAAAAAAAAAAAXtjXk1g74"
+			"CGUCAABpTeLsUPSOLUECAABI2Pvl/H8AAAIBAAD/////AAAAAAAAAAAAAAAAAAAAAABmAGkAcwBo"
+			"ZgIAAAAAAABwK48tQQIAAEjY++X8fwAAAgEAAP////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABn"
+			"AgAAAAAAAJAOjy1BAgAAONn75fx/AAACAQAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgC"
+			"AAAAAAAA0P6OLUECAAA42fvl/H8AAAIBAAD/////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaQIA"
+			"AAAAAABQ9I4tQQIAADjZ++X8fwAAAgEAAP////8AAAAAAAAAAAAAAAAAAAAAgGCjJUECAABqAgAA"
+			"AAAAAHArjy1BAgAAONn75fx/AAACAQAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGsCAAAA"
+			"AAAAkA6PLUECAA=="
 		)
-	)
-	(text " All Noctua fans provide a tachometer output signal of the following characteristics:\n • two cycles per revolution\n • open collector output\n • Maximum current is 5mA for 5V"
-		(exclude_from_sim no)
-		(at 193.04 85.598 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "171b3da7-ecc0-45b3-a8f1-f1b832151a50")
-	)
-	(text "10K -> 0101_100(r/w)"
-		(exclude_from_sim no)
-		(at 55.118 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1ec61962-adbd-43e6-8d04-4bbbe349d972")
-	)
-	(text " As specified by Intel (c.f. \"4-Wire Pulse Width Modulation (PWM) Controlled Fans\", Intel \nCorporation September 2005, revision 1.3), the square wave type PWM signal has to be \nsupplied to the PWM input (pin 4) of the fan and must conform to the \nfollowing specifications:\n • Target frequency: 25kHz, acceptable range 21kHz to 28kHz\n • Maximum voltage for logic low: VIL=0,8V\n • Absolute maximum current sourced: Imax=5mA (short circuit current)\n • Absolute maximum voltage level: VMax=5,25V (open circuit voltage)\n • Allowed duty-cycle range 0% to 100%\n\nThe signal is not inverted, 100% PWM duty cycle (= 5V DC) results in maximum fan speed.\n External pull-up is not necessary as the signal is pulled up to 3,3V/5V inside the fan."
-		(exclude_from_sim no)
-		(at 193.294 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "80aa8901-9898-42ea-ab3b-b1fb3b8bbdb8")
 	)
 	(label "TACH2"
 		(at 113.03 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2850,7 +2910,6 @@
 	)
 	(label "TACH5"
 		(at 113.03 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2861,7 +2920,6 @@
 	)
 	(label "PWM5"
 		(at 113.03 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2872,7 +2930,6 @@
 	)
 	(label "TACH4"
 		(at 113.03 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2883,7 +2940,6 @@
 	)
 	(label "PWM4"
 		(at 113.03 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2894,7 +2950,6 @@
 	)
 	(label "PWM2"
 		(at 113.03 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2905,7 +2960,6 @@
 	)
 	(label "Tach1"
 		(at 113.03 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2916,7 +2970,6 @@
 	)
 	(label "TACH3"
 		(at 113.03 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2927,7 +2980,6 @@
 	)
 	(label "PWM3"
 		(at 113.03 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2938,7 +2990,6 @@
 	)
 	(label "ADDR_SEL"
 		(at 69.85 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2949,7 +3000,6 @@
 	)
 	(label "PWM1"
 		(at 113.03 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2961,7 +3011,6 @@
 	(hierarchical_label "I2C_CLK"
 		(shape input)
 		(at 68.58 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2973,7 +3022,6 @@
 	(hierarchical_label "I2C_DATA"
 		(shape bidirectional)
 		(at 68.58 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2985,7 +3033,6 @@
 	(hierarchical_label "FAN_ALERT"
 		(shape output)
 		(at 38.1 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

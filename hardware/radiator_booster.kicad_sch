@@ -1,20 +1,24 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "af3170cb-38e8-4f1f-8d67-3c2d4410beea")
 	(paper "A4")
 	(title_block
 		(title "Radiator Booster")
-		(date "2025-01-19")
-		(rev "0.1")
+		(date "2025-03-08")
+		(rev "0.2")
 		(company "LP")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -112,12 +116,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -208,7 +217,19 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Mounting Holes (M3)\n"
+		(exclude_from_sim no)
+		(at 227.33 134.62 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c7ccb70-f0a1-4451-9a8c-b360fc7b2fd4")
 	)
 	(junction
 		(at 252.73 152.4)
@@ -398,20 +419,8 @@
 		)
 		(uuid "f68644ee-c7e8-4517-9276-e0742899cbf5")
 	)
-	(text "Mounting Holes (M3)\n"
-		(exclude_from_sim no)
-		(at 227.33 134.62 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "4c7ccb70-f0a1-4451-9a8c-b360fc7b2fd4")
-	)
 	(label "I2C_CLK"
 		(at 66.04 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -422,7 +431,6 @@
 	)
 	(label "I2C_DATA"
 		(at 66.04 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -433,7 +441,6 @@
 	)
 	(label "FAN_ALERT"
 		(at 66.04 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -779,6 +786,10 @@
 	(sheet
 		(at 30.48 76.2)
 		(size 33.02 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -808,33 +819,33 @@
 		)
 		(pin "FAN_ALERT" output
 			(at 63.5 85.09 0)
+			(uuid "7deeb05b-c4c0-4e7a-abab-7bd61a713d71")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7deeb05b-c4c0-4e7a-abab-7bd61a713d71")
 		)
 		(pin "I2C_CLK" input
 			(at 63.5 82.55 0)
+			(uuid "e94cf139-2362-42ea-baea-675f086a9f55")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e94cf139-2362-42ea-baea-675f086a9f55")
 		)
 		(pin "I2C_DATA" bidirectional
 			(at 63.5 80.01 0)
+			(uuid "ca6b7fcb-5a74-4b7a-ad43-8af826a8fae8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ca6b7fcb-5a74-4b7a-ad43-8af826a8fae8")
 		)
 		(instances
 			(project "radiator_booster"
@@ -847,6 +858,10 @@
 	(sheet
 		(at 77.47 45.72)
 		(size 31.75 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -876,33 +891,33 @@
 		)
 		(pin "I2C_DATA" bidirectional
 			(at 77.47 80.01 180)
+			(uuid "edb7fcd4-3a55-468b-b632-25ab157a255e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "edb7fcd4-3a55-468b-b632-25ab157a255e")
 		)
 		(pin "I2C_CLK" output
 			(at 77.47 82.55 180)
+			(uuid "df1ed175-2fbe-4670-9d60-405cd809ad43")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "df1ed175-2fbe-4670-9d60-405cd809ad43")
 		)
 		(pin "FAN_ALERT" input
 			(at 77.47 85.09 180)
+			(uuid "6e94b480-a405-4c43-abb0-e5bac383af51")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6e94b480-a405-4c43-abb0-e5bac383af51")
 		)
 		(instances
 			(project "radiator_booster"
@@ -915,6 +930,10 @@
 	(sheet
 		(at 30.48 45.72)
 		(size 33.02 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -955,4 +974,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
