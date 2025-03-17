@@ -1432,6 +1432,14 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -3620,6 +3628,17 @@
 			(justify left bottom)
 		)
 		(uuid "c962b047-14df-4c13-9047-770951161c9d")
+	)
+	(text "Place 10u close to Pin17\n"
+		(exclude_from_sim no)
+		(at 205.74 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fefee22c-fd7b-450e-b561-d24588f52995")
 	)
 	(junction
 		(at 153.67 41.91)
@@ -6838,7 +6857,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Antenna"
+		(property "Value" "ANT3216LL00R2400A"
 			(at 60.96 51.4349 0)
 			(effects
 				(font
@@ -6847,7 +6866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lzptr:Rainsun-AN9520-245"
+		(property "Footprint" "lzptr:ANT3216LL00R2400A"
 			(at 58.42 49.53 0)
 			(effects
 				(font
@@ -6874,7 +6893,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C99665"
+		(property "MPN" "C293767"
 			(at 58.42 49.53 0)
 			(effects
 				(font
@@ -7053,6 +7072,15 @@
 			)
 		)
 		(property "MPN" "C2297"
+			(at 267.97 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 267.97 135.89 0)
 			(effects
 				(font
