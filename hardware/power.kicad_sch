@@ -2596,7 +2596,7 @@
 				)
 			)
 		)
-		(property "Value" "2n2"
+		(property "Value" "2n3"
 			(at 39.37 43.18 90)
 			(effects
 				(font
@@ -2631,7 +2631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "2.53A"
+		(property "Rating" "1A"
 			(at 39.37 46.736 90)
 			(effects
 				(font
@@ -2639,7 +2639,7 @@
 				)
 			)
 		)
-		(property "MPN" "C412264"
+		(property "MPN" "C412340"
 			(at 39.37 45.72 0)
 			(effects
 				(font

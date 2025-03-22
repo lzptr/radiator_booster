@@ -6044,7 +6044,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C1564"
+		(property "MPN" "C88891"
 			(at 96.52 63.5 0)
 			(effects
 				(font
@@ -6771,7 +6771,7 @@
 				)
 			)
 		)
-		(property "Value" "2n2"
+		(property "Value" "2n3"
 			(at 87.63 55.88 90)
 			(effects
 				(font
@@ -6806,7 +6806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "2.53A"
+		(property "Rating" "1A"
 			(at 87.376 60.198 90)
 			(effects
 				(font
@@ -6814,7 +6814,7 @@
 				)
 			)
 		)
-		(property "MPN" "C412264"
+		(property "MPN" "C412340"
 			(at 87.63 58.42 0)
 			(effects
 				(font
@@ -7245,7 +7245,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C1564"
+		(property "MPN" "C88891"
 			(at 77.47 63.5 0)
 			(effects
 				(font
@@ -8736,7 +8736,7 @@
 				)
 			)
 		)
-		(property "Value" "2n2"
+		(property "Value" "2n3"
 			(at 125.73 24.13 90)
 			(effects
 				(font
@@ -8771,7 +8771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "2.53A"
+		(property "Rating" "1A"
 			(at 125.73 27.686 90)
 			(effects
 				(font
@@ -8779,7 +8779,7 @@
 				)
 			)
 		)
-		(property "MPN" "C412264"
+		(property "MPN" "C412340"
 			(at 125.73 26.67 0)
 			(effects
 				(font
