@@ -8,3 +8,5 @@ The idea is to use ESPHome with Home Assistant to turn on up to 5 radiator boost
 
 For an interactive KiCad experience see:
 [Radiator Booster](https://kicanvas.org/?github=https://github.com/lzptr/radiator_booster/tree/main/hardware).
+
+<img width="1478" height="1217" alt="image" src="https://github.com/user-attachments/assets/21d62d73-76fc-440b-b820-a11efc18e266" />
