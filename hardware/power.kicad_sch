@@ -366,6 +366,14 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -2588,7 +2596,7 @@
 				)
 			)
 		)
-		(property "Value" "2n2"
+		(property "Value" "2n3"
 			(at 39.37 43.18 90)
 			(effects
 				(font
@@ -2623,7 +2631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "2.53A"
+		(property "Rating" "1A"
 			(at 39.37 46.736 90)
 			(effects
 				(font
@@ -2631,7 +2639,7 @@
 				)
 			)
 		)
-		(property "MPN" "C412264"
+		(property "MPN" "C412340"
 			(at 39.37 45.72 0)
 			(effects
 				(font
@@ -3026,6 +3034,15 @@
 			)
 		)
 		(property "MPN" "C2297"
+			(at 143.51 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 143.51 52.07 0)
 			(effects
 				(font
